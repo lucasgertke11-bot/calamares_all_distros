@@ -12,10 +12,52 @@ calamares-puro/
 │   ├── libcalamares.so.3.3.14
 │   ├── libcalamares.so.3.3
 │   └── libcalamares.so
-├── share/
-│   └── calamares/         # Módulos e configurações
+├── themes/
+│   ├── default/           # Tema clássico
+│   ├── modern/            # Tema moderno com slideshow
+│   └── select-theme.sh    # Script para escolher tema
+├── install.sh             # Script de instalação
 └── README.md
 ```
+
+---
+
+# TEMAS DISPONÍVEIS
+
+Este repositório inclui **dois temas** para o Calamares:
+
+## 📁 Tema Default (Clássico)
+- Interface clássica do Calamares
+- Visual tradicional
+- Ideal para distribuições conservadoras
+
+## 🎨 Tema Moderno
+- Visual moderno e atualizado
+- Slideshow durante a instalação
+- Estilos CSS personalizáveis
+- Ideal para distribuições contemporâneas
+
+## Como Instalar um Tema
+
+### Método 1: Script Interativo (Recomendado)
+```bash
+cd themes
+sudo bash select-theme.sh
+```
+
+### Método 2: Manual
+
+```bash
+# Tema Default
+sudo cp -r themes/default /usr/share/calamares/branding/default
+
+# Tema Moderno
+sudo cp -r themes/modern /usr/share/calamares/branding/default
+```
+
+Para mais detalhes, veja: [themes/README.md](themes/README.md)
+
+---
 
 ## O que é o Calamares?
 
